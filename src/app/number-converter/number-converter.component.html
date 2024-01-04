@@ -1,0 +1,18 @@
+<div class="converter-container">
+    <div class="converter-group">
+      <label for="numberInput" class="input-label">Enter a number:</label>
+      <input id="numberInput" type="number" [(ngModel)]="inputNumber" class="input-field" />
+      <div *ngIf="inputNumber !== undefined" class="result-label">
+        Result: {{ inputNumber | digitToText }}
+      </div>
+    </div>
+  
+    <div class="converter-group">
+      <label for="numberInput1" class="input-label">Enter a number:</label>
+      <input id="numberInput1" type="number" [(ngModel)]="inputNumber1" class="input-field" />
+      <div *ngIf="inputNumber1 !== undefined" class="result-label">
+        Result: {{ inputNumber1 | numberToWords }}
+      </div>
+    </div>
+  </div>
+  
